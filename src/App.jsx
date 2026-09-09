@@ -12,15 +12,7 @@ function App() {
         {/* Hero */}
         <Hero />
 
-        {/* About */}
-        <Section
-          id="about"
-          eyebrow="About Me"
-          title="More than just a developer."
-          description="An Informatics Management professional combining technology, data, design, and communication to build useful digital solutions."
-        >
-          <div className="h-40 rounded-2xl border border-dashed border-zinc-800 bg-[#111118]/50" />
-        </Section>
+        <About />
 
         {/* Skills */}
         <Section
