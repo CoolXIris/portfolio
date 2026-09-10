@@ -2,6 +2,11 @@ import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Experience from "./sections/Experience";
+import Education from "./sections/Education";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
@@ -9,48 +14,19 @@ function App() {
       <Navbar />
 
       <main>
-        {/* Hero */}
         <Hero />
 
         <About />
 
-        {/* Skills */}
-        <Section
-          id="skills"
-          eyebrow="Skills"
-          title="Tools I work with."
-          description="A combination of technical, analytical, creative, and professional skills."
-        >
-          <div className="h-40 rounded-2xl border border-dashed border-zinc-800 bg-[#111118]/50" />
-        </Section>
+        <Skills />
 
-        {/* Projects */}
-        <Section
-          id="projects"
-          eyebrow="Selected Projects"
-          title="Things I've built and worked on."
-        >
-          <div className="h-40 rounded-2xl border border-dashed border-zinc-800 bg-[#111118]/50" />
-        </Section>
+        <Projects />
 
-        {/* Experience */}
-        <Section
-          id="experience"
-          eyebrow="Experience"
-          title="Where I've contributed."
-        >
-          <div className="h-40 rounded-2xl border border-dashed border-zinc-800 bg-[#111118]/50" />
-        </Section>
+        <Experience />
 
-        {/* Contact */}
-        <Section
-          id="contact"
-          eyebrow="Contact"
-          title="Let's build something useful."
-          description="Have a project, opportunity, or collaboration in mind? Let's talk."
-        >
-          <div className="h-40 rounded-2xl border border-dashed border-zinc-800 bg-[#111118]/50" />
-        </Section>
+        <Education />
+
+        <Contact />
       </main>
     </div>
   );
