@@ -67,7 +67,7 @@ function Hero() {
             </a>
 
             <a
-              href="/CV_Nur.pdf"
+              href={import.meta.env.BASE_URL + 'CV_Nur.pdf'}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-zinc-700 bg-white/[0.02] px-6 py-3 text-sm font-semibold text-zinc-200 transition-all duration-300 hover:-translate-y-0.5 hover:border-violet-500/60 hover:bg-violet-500/10 hover:text-white"
