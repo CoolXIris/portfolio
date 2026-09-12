@@ -116,7 +116,7 @@ function Hero() {
           >
             {/* Profile Image */}
             <img
-              src="/profile1.png"
+              src={"${import.meta.env.BASE_URL}profile1.png"}
               alt="Muhammad Nur Syahputra"
               className="h-full w-full object-cover object-center"
             />
