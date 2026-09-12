@@ -129,6 +129,8 @@ function Navbar() {
                 ))}
               </div>
 
+              
+
               <a
                 href="#contact"
                 onClick={handleNavigation}
