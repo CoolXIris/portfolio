@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Award, GraduationCap, Users, BriefcaseBusiness } from "lucide-react";
+import SectionBackground from "../components/SectionBackground";
 
 const highlights = [
   {
@@ -23,9 +24,10 @@ function Education() {
   return (
     <section
       id="education"
-      className="relative border-t border-zinc-900 py-24 sm:py-28 lg:py-32"
+      className="theme-background theme-primary relative border-t border-zinc-900 py-24 sm:py-28 lg:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <SectionBackground variant="timeline" />
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}

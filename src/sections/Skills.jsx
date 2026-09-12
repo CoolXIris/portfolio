@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Code2, Database, Palette, BriefcaseBusiness } from "lucide-react";
+import SectionBackground from "../components/SectionBackground";
 
 const skillGroups = [
   {
@@ -72,8 +73,9 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="relative border-t border-zinc-900 py-24 sm:py-28 lg:py-32"
+      className="theme-background theme-primary relative border-t border-zinc-900 py-24 sm:py-28 lg:py-32"
     >
+      <SectionBackground variant="radial" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -132,7 +134,7 @@ function Skills() {
 
                     <div className="h-px w-8 bg-zinc-800" />
 
-                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-purple-300">
                       {group.title}
                     </span>
                   </div>

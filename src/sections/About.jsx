@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Code2, Database, Palette } from "lucide-react";
+import SectionBackground from "../components/SectionBackground";
+import { useSite } from "../context/SiteContext";
 
 const capabilities = [
   {
@@ -28,12 +30,14 @@ const capabilities = [
 ];
 
 function About() {
+  const { t } = useSite();
   return (
     <section
       id="about"
-      className="relative border-t border-zinc-900 py-24 sm:py-28 lg:py-32"
+      className="theme-background theme-primary relative border-t border-zinc-900 py-24 sm:py-28 lg:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <SectionBackground variant="soft" />
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -46,28 +50,24 @@ function About() {
           <div>
             <p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em] text-violet-400">
               <span className="h-px w-8 bg-gradient-to-r from-violet-500 to-cyan-400" />
-              About Me
+              {t.about.eyebrow}
             </p>
           </div>
 
           {/* Main Content */}
           <div>
             <h2 className="font-heading text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-              More than just
+              {t.about.titleFirst}
               <br />
-              <span className="text-zinc-500">a developer.</span>
+              <span className="text-zinc-500">{t.about.titleSecond}</span>
             </h2>
 
             <p className="mt-7 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
-              I’m an Informatics Management professional with an interest in
-              building useful digital solutions through technology, data, and
-              creative thinking.
+              {t.about.paragraphFirst}
             </p>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-zinc-500">
-              My background combines technical development with visual design,
-              communication, and problem solving — allowing me to approach
-              digital projects from both technical and creative perspectives.
+              {t.about.paragraphSecond}
             </p>
           </div>
         </motion.div>

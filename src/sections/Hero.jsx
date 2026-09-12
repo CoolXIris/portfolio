@@ -1,23 +1,14 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Download } from "lucide-react";
+import SectionBackground from "../components/SectionBackground";
 
 function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden pt-24"
+      className="theme-background theme-primary relative flex min-h-screen items-center overflow-hidden pt-24"
     >
-      {/* Background Grid */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.035]"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, #ffffff 1px, transparent 1px),
-            linear-gradient(to bottom, #ffffff 1px, transparent 1px)
-          `,
-          backgroundSize: "64px 64px",
-        }}
-      />
+      <SectionBackground variant="grid" />
 
       {/* Purple Glow */}
       <div className="pointer-events-none absolute left-1/4 top-1/3 h-80 w-80 rounded-full bg-violet-600/10 blur-[120px]" />

@@ -1,21 +1,22 @@
 import { motion } from "framer-motion";
 import { BriefcaseBusiness, Building2, Monitor, Users } from "lucide-react";
+import SectionBackground from "../components/SectionBackground";
 
 const experiences = [
   {
     number: "01",
     period: "Professional Experience",
-    role: "Operator Server",
+    role: "IT Support",
     organization: "SMK Negeri 1 Palembang",
     icon: Monitor,
     description:
       "Contributed to technical and operational activities related to school information systems, server operations, and digital infrastructure.",
-    tags: ["IT Support", "Server", "Technical Operations"],
+    tags: ["Troubleshooting", "Server", "Technical Operations"],
   },
   {
     number: "02",
     period: "Internship",
-    role: "Staff Humas",
+    role: "Asisten Pranata Komputer (Staff Humas)",
     organization: "Balai Teknik Perkeretaapian Kelas II Palembang",
     icon: Building2,
     description:
@@ -38,9 +39,11 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="relative border-t border-zinc-900 py-24 sm:py-28 lg:py-32"
+      className="theme-background theme-primary relative border-t border-zinc-900 py-24 sm:py-28 lg:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      {" "}
+      <SectionBackground variant="timeline" />
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}

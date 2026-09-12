@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Download, Mail } from "lucide-react";
+import SectionBackground from "../components/SectionBackground";
 
 const contactLinks = [
   {

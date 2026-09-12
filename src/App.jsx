@@ -6,11 +6,13 @@ import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Education from "./sections/Education";
+import Recognition from "./sections/Recognition";
 import Contact from "./sections/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0A0A0F] text-[#F5F5F7]">
+    <div id="home" className="theme-background theme-primary min-h-screen">
       <Navbar />
 
       <main>
@@ -26,7 +28,11 @@ function App() {
 
         <Education />
 
+        <Recognition />
+
         <Contact />
+
+        <Footer />
       </main>
     </div>
   );
