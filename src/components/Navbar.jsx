@@ -129,58 +129,6 @@ function Navbar() {
                 ))}
               </div>
 
-              <div className="mt-6 flex items-center justify-between gap-3">
-                {/* Mobile Language Toggle */}
-                <button
-                  type="button"
-                  onClick={toggleLanguage}
-                  className="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 text-xs font-semibold"
-                >
-                  <Languages size={15} className="text-[var(--color-muted)]" />
-
-                  <span
-                    className={
-                      language === "en"
-                        ? "text-violet-400"
-                        : "text-[var(--color-muted)]"
-                    }
-                  >
-                    EN
-                  </span>
-
-                  <span className="text-[var(--color-muted)]">/</span>
-
-                  <span
-                    className={
-                      language === "id"
-                        ? "text-cyan-400"
-                        : "text-[var(--color-muted)]"
-                    }
-                  >
-                    ID
-                  </span>
-                </button>
-
-                {/* Mobile Theme Toggle */}
-                <button
-                  type="button"
-                  onClick={toggleTheme}
-                  className="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 text-sm text-[var(--color-secondary)]"
-                >
-                  {theme === "dark" ? (
-                    <>
-                      <Sun size={16} />
-                      Light mode
-                    </>
-                  ) : (
-                    <>
-                      <Moon size={16} />
-                      Dark mode
-                    </>
-                  )}
-                </button>
-              </div>
-
               <a
                 href="#contact"
                 onClick={handleNavigation}
