@@ -119,7 +119,7 @@ function Contact() {
           className="mt-10 flex justify-center"
         >
           <a
-            href="/cv.pdf"
+            href={import.meta.env.BASE_URL + 'CV_Nur.pdf'}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 transition-colors duration-300 hover:text-white"

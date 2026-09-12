@@ -20,7 +20,7 @@ const recognitions = [
     organization: "Central Course",
     period: "Sep 2026 — Sep 2028",
     icon: BadgeCheck,
-    certificateFile: "/certificates/sertifikat-toefl.pdf",
+    certificateFile: import.meta.env.BASE_URL + 'certificates/sertifikat-toefl.pdf',
     score: "TOEFL Score 567",
     description:
       "Sertifikat ini saya peroleh setelah mengikuti tes TOEFL secara online yang diselenggarakan oleh Central Course.",
@@ -43,7 +43,7 @@ const recognitions = [
       "SINTAK HMJ Manajemen Informatika — Politeknik Negeri Sriwijaya",
     period: "Januari 2024",
     icon: Trophy,
-    certificateFile: "/certificates/sertifikat-sintak.pdf",
+    certificateFile: import.meta.env.BASE_URL + 'certificates/sertifikat-sintak.pdf',
     score: "Project Manager",
     description:
       "Meraih penghargaan Desain Website Terbaik untuk konsep Top Up Game Online pada kegiatan SINTAK HMJ Manajemen Informatika Politeknik Negeri Sriwijaya.",
